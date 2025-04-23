@@ -33,8 +33,7 @@ img {
 }
 .site-header__navbar--scrolled {
   background-color: white;
-  box-shadow:
-    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: all 0.3s ease;
 }
@@ -286,9 +285,7 @@ nav {
   position: fixed;
   top: 0%;
   transform: translateX(100%) translateY(-10%);
-  transition:
-    transform 0.4s ease-in-out,
-    opacity 0.3s ease;
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease;
   opacity: 0;
   pointer-events: none;
 }
@@ -485,6 +482,7 @@ nav {
   background-color: white;
   color: black;
   padding: 14px;
+  font-size: 14px;
   border-radius: 50%;
   transition: 0.2s all ease;
 }
@@ -588,9 +586,6 @@ nav {
 .brands__image {
   height: 35px;
 }
-.levels {
-  padding-bottom: 120px;
-}
 
 .levels__change {
   padding: 120px 0px;
@@ -690,7 +685,6 @@ nav {
   color: white;
   border: none;
   font-size: 17px;
-  height: fit-content;
 }
 
 .solutions__btn--view {
