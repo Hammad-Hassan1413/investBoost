@@ -225,7 +225,13 @@ nav {
 .hero__graph img:hover {
   transform: scale(1.1);
 }
-
+.sidebar__cancel i {
+  transition: 0.2s all ease-in;
+}
+.sidebar__cancel i:hover {
+  color: #1559ed;
+  transform: rotate(90deg);
+}
 .hero__visuals-right {
   flex: 1;
   overflow: hidden;
@@ -962,6 +968,12 @@ nav {
   .levels__heading {
     font-size: 35px;
     text-align: center;
+  }
+  .solutions__heading {
+    font-size: 35px;
+  }
+  .brands {
+    padding-bottom: 60px;
   }
   .levels__cards {
     display: grid;
