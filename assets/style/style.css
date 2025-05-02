@@ -50,7 +50,11 @@ nav {
   justify-content: space-between;
   z-index: 100;
 }
-
+.nav-flex a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 .site-header__hamburger {
   width: 10%;
   display: flex;
@@ -72,6 +76,7 @@ nav {
   list-style: none;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .site-header__nav-link {
@@ -919,6 +924,9 @@ nav {
     width: 100%;
     padding: 0 38px;
   }
+  h2 {
+    font-size: 30px !important;
+  }
   .hero__layout {
     flex-direction: column;
   }
@@ -981,7 +989,7 @@ nav {
   }
   .levels__cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   .hero__content p {
@@ -989,6 +997,14 @@ nav {
   }
   .solutions__price-value {
     font-size: 30px;
+  }
+  .solutions__card {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .solutions__card div {
+    width: 100%;
+    text-align: center;
   }
   .solutions__card p {
     font-size: 16px;
@@ -1005,6 +1021,8 @@ nav {
   }
   .support__icon-flex {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .support__input {
     width: 100%;
@@ -1026,6 +1044,12 @@ nav {
   }
   .exclusive {
     padding: 80px 0px;
+  }
+  .pts__flex {
+    flex-direction: column;
+  }
+  .pts__flex div {
+    width: 100% !important;
   }
 }
 @media (max-width: 600px) {
