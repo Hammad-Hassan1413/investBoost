@@ -1,3 +1,5 @@
+const input = document.querySelector('.support__email-input');
+input.focus();
 window.addEventListener('scroll', function () {
   const navbar = document.querySelector('.site-header__navbar');
   const logoImg = document.querySelector('.site-header__logo img');

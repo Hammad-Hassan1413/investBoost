@@ -995,6 +995,9 @@ nav {
   .hero__content p {
     text-align: center;
   }
+  .solutions {
+    padding: 70px 0px;
+  }
   .solutions__price-value {
     font-size: 30px;
   }
@@ -1027,6 +1030,12 @@ nav {
   .support__input {
     width: 100%;
     text-align: center;
+  }
+  .pts {
+    padding-bottom: 70px;
+  }
+  .support__flex {
+    gap: 20px;
   }
   .footer__logo {
     text-align: center;
