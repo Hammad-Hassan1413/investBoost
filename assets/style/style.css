@@ -298,7 +298,7 @@ nav {
   z-index: 102;
   position: fixed;
   top: 0%;
-  transform: translateX(100%) translateY(-10%);
+  transform: translateX(100%) translateY(0%);
   transition: transform 0.4s ease-in-out, opacity 0.3s ease;
   opacity: 0;
   pointer-events: none;
@@ -908,47 +908,48 @@ nav {
 }
 @media (max-width: 1024px) {
   .container {
-    width: 100%;
-    padding: 0 50px;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    padding: 0px 45px;
   }
   .site-header__nav-list {
     display: none;
   }
-  .hero__content {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 38px;
+  h1 {
+    font-size: 50px !important;
   }
   h2 {
-    font-size: 30px !important;
+    font-size: 35px !important;
+  }
+  h3 {
+    font-size: 25px !important;
+  }
+  p {
+    font-size: 18px !important;
   }
   .hero__layout {
     flex-direction: column;
   }
-  .hero__content {
-    width: 100%;
-  }
+  .hero__layout .hero__content,
   .hero__visuals {
     width: 100%;
-  }
-  h1 {
-    font-size: 50px;
     text-align: center;
   }
-  /* h2 {
-    font-size: 35px;
-  } */
   .hero__group {
+    gap: 10px;
+  }
+  .hero__avatars {
     justify-content: center;
   }
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 80px;
+  .hero__graph img {
+    width: 432px;
+    height: 350px;
+  }
+  .exclusive {
+    padding: 80px 0px;
   }
   .exclusive__expert {
     flex-direction: column;
@@ -957,218 +958,44 @@ nav {
     width: 100%;
     text-align: center;
   }
-  .exclusive__heading {
-    font-size: 35px;
-    text-align: center;
+  .exclusive__title {
+    text-align: left;
+    font-size: 15px !important;
   }
   .exclusive__dollars {
     width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .exclusive__dollars img {
-    width: 354px;
-    height: 432px;
-  }
-  .hero__graph img {
-    width: 100%;
-    height: 350px;
-  }
-  .levels__change {
-    padding: 80px 0px;
-  }
-  .levels__heading {
-    font-size: 35px;
     text-align: center;
   }
-  .solutions__heading {
-    font-size: 35px;
-  }
-  .brands {
-    padding-bottom: 60px;
+  .exclusive__dollars img {
+    width: 480px;
+    height: 585px;
   }
   .levels__cards {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .hero__content p {
-    text-align: center;
-  }
-  .solutions {
-    padding: 70px 0px;
-  }
-  .solutions__price-value {
-    font-size: 30px;
-  }
-  .solutions__card {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .solutions__card div {
-    width: 100%;
-    text-align: center;
-  }
-  .solutions__card p {
-    font-size: 16px;
-  }
-  .solutions__info button {
-    padding: 0;
+  .pts__heading {
+    font-size: 20px !important;
   }
   .support__flex {
     flex-direction: column;
+    text-align: center;
   }
   .support__zero {
     width: 100%;
-    text-align: center;
   }
   .support__icon-flex {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
   .support__input {
     width: 100%;
-    text-align: center;
-  }
-  .pts {
-    padding-bottom: 70px;
-  }
-  .support__flex {
-    gap: 20px;
   }
   .footer__logo {
     text-align: center;
   }
-  .footer__logo img {
-    margin-bottom: 20px;
-  }
   .footer__flex {
     flex-direction: column;
-    gap: 20px;
-  }
-  .brands__images-flex {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .exclusive {
-    padding: 80px 0px;
-  }
-  .pts__flex {
-    flex-direction: column;
-  }
-  .pts__flex div {
-    width: 100% !important;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 0 16px;
-  }
-  .sidebar__menu {
-    max-width: 90%;
-    width: 90%;
-    margin: 20px;
-  }
-  .brands {
-    padding-bottom: 80px;
-  }
-  .brands__images-flex {
-    flex-direction: column;
-  }
-  .hero {
-    padding-top: 170px;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  p {
-    font-size: 17px;
-  }
-  .hero__content {
-    text-align: center;
-  }
-  .hero__actions {
-    width: 100%;
-  }
-  .hero__group {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .hero__visuals {
-    flex-direction: column;
-  }
-  .hero__visuals-left {
-    width: 100%;
-  }
-  .hero__visuals-right {
-    width: 100%;
-    min-height: 585px;
-    height: 585px;
-  }
-  .exclusive__heading {
-    font-size: 30px;
-  }
-  .exclusive__dollars img {
-    width: 314px;
-    height: 382px;
-  }
-  .exclusive__dollars {
-    padding: 35px 30px 30px;
-  }
-  .brands__images-flex {
-    gap: 25px;
-  }
-  .levels__heading {
-    font-size: 30px;
-  }
-  .levels__cards {
-    grid-template-columns: repeat(1, 2fr);
-  }
-  .solutions__speak {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
     justify-content: center;
-  }
-  .solutions__heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .solutions__card {
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
-  }
-  .solutions__price {
-    width: 100%;
-    text-align: center;
-  }
-  .solutions__date {
-    width: 100%;
-    text-align: center;
-  }
-  .solutions__info {
-    width: 100%;
-    text-align: center;
-  }
-  .pts__flex {
-    flex-direction: column;
-  }
-  .pts__professional,
-  .pts__transparency,
-  .pts__security {
-    width: 100%;
-    text-align: center;
-  }
-  .support__heading {
-    font-size: 30px;
-  }
-  .footer__flex li {
-    font-size: 16px;
-  }
-  .solutions {
-    padding: 80px 0px;
   }
 }
