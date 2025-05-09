@@ -1,5 +1,5 @@
 const input = document.querySelector('.support__email-input');
-input.focus();
+// input.focus();
 window.addEventListener('scroll', function () {
   const navbar = document.querySelector('.site-header__navbar');
   const logoImg = document.querySelector('.site-header__logo img');
@@ -38,3 +38,22 @@ function closeSidebar() {
 
 cancel.addEventListener('click', closeSidebar);
 overlay.addEventListener('click', closeSidebar);
+const hoverTrigger = document.querySelector('.hover-intact');
+const hoverMenu = document.querySelector('.hover-menu');
+
+function showMenu() {
+  hoverMenu.classList.remove('hidden');
+  hoverMenu.style.opacity = '1';
+}
+
+function hideMenu() {
+  // Only hide if the mouse is not over trigger or menu
+  if (!hoverTrigger.matches(':hover') && !hoverMenu.matches(':hover')) {
+    hoverMenu.classList.add('hidden');
+    hoverMenu.style.opacity = '0';
+  }
+}
+
+hoverTrigger.addEventListener('mouseenter', showMenu);
+hoverTrigger.addEventListener('mouseleave', () => setTimeout(hideMenu, 100));
+hoverMenu.addEventListener('mouseleave', () => setTimeout(hideMenu, 100));
