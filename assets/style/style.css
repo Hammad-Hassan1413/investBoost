@@ -950,6 +950,7 @@ nav {
   padding: 15px;
   border-radius: 40px;
   transition: 0.2s all ease-in-out;
+  z-index: 2;
 }
 .hover-menu.hidden {
   visibility: hidden;
